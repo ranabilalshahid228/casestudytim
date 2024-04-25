@@ -1,27 +1,41 @@
-project:
-  type: website
-  output-dir: docs
-  
 website:
-  title: "Casestudytim"
+  title: ProjectX
   navbar:
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - projects.qmd
-    tools:
-      - icon: twitter
-        href: https://twitter.com/
-      - icon: github
-        href: https://github.com/ranabilalshahid228/casestudytim
-  page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
-    left: "&copy; Copyright 2023, Bilal Shahid"
+      - text: "Home"
+        file: index.qmd
+      - text: "Tutorials"
+        file: tutorials.qmd
+      - text: "How-To"
+        file: howto.qmd
+      - text: "Fundamentals"
+        file: fundamentals.qmd
+      - text: "Reference"
+        file: reference.qmd
 
-format:
-  html:
-    theme: cerulean
-    toc: true
+  sidebar:
+    - title: "Tutorials"
+      style: "docked"
+      background: light
+      contents:
+        - tutorials.qmd
+        - tutorial-1.qmd
+        - tutorial-2.qmd
 
-editor: source
+    - title: "How-To"
+      contents:
+        - howto.qmd
+        # navigation items
 
+    - title: "Fundamentals"
+      contents:
+        - fundamentals.qmd
+        # navigation items
+
+    - title: "Reference"
+      contents:
+        - reference.qmd
+        # navigation items
+    

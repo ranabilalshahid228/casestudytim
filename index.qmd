@@ -7,11 +7,52 @@ about:
 ---
 
 ::: {#me}
-## Semester No. 
+## Semester No.
 
 ## Subject Name/ Course Number
 
-## Professor 
+## Professor
 :::
+website:
+  title: ProjectX
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Tutorials"
+        file: tutorials.qmd
+      - text: "How-To"
+        file: howto.qmd
+      - text: "Fundamentals"
+        file: fundamentals.qmd
+      - text: "Reference"
+        file: reference.qmd
+
+  sidebar:
+    - title: "Tutorials"
+      style: "docked"
+      background: light
+      contents:
+        - tutorials.qmd
+        - tutorial-1.qmd
+        - tutorial-2.qmd
+
+    - title: "How-To"
+      contents:
+        - howto.qmd
+        # navigation items
+
+    - title: "Fundamentals"
+      contents:
+        - fundamentals.qmd
+        # navigation items
+
+    - title: "Reference"
+      contents:
+        - reference.qmd
+        # navigation items
+    
 
 Thanks for checking out my web site!
